@@ -1,0 +1,24 @@
+{
+	"mappingInfo": [
+		{
+			"name": "com.nhn.exam.was.servlet.impl",
+			"route": 
+				{
+					"/service.Hello"	: "HelloServlet",
+					"/service.Greeting"	: "HelloServlet",
+					"/service.time"		: "TimeServlet"
+				}
+			
+		},
+		{
+			"name": "com.nhn.exam.was.servlet.impl",
+			"route": 
+				{
+					"/Hello"	: "HelloServlet",
+					"/Greeting"	: "HelloServlet",
+					"/time"		: "TimeServlet"
+				}
+			
+		}
+	]
+}

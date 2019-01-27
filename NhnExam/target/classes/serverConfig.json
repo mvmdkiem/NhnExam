@@ -1,0 +1,29 @@
+{
+	"name": "was",
+	"port": 8080,
+	"filter": ["exe"],
+	"server": [
+		{
+			"name": "was",
+			"domain": "www.server1.com",
+			"root": "/src/main/webapp1/WEB-INF",
+			"html": {
+				"index": "index.html",
+				"page403": "/403.html",
+				"page404": "/404.html",
+				"page500": "/500.html"
+			}
+		},
+		{
+			"name": "simple",
+			"domain": "www.server2.com",
+			"root": "/src/main/webapp2/WEB-INF",
+			"html": {
+				"index": "index.html",
+				"page403": "/403.html",
+				"page404": "/404.html",
+				"page500": "/500.html"
+			}
+		}
+	]
+}
