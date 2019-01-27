@@ -10,7 +10,11 @@ import com.nhn.exam.was.utils.JsonRead;
 
 import lombok.Getter;
 import lombok.Setter;
-
+/**
+ * 
+ * @author Kim TaeHouyng
+ *
+ */
 public class Host {
     private static Logger logger = LoggerFactory.getLogger(Host.class);
 

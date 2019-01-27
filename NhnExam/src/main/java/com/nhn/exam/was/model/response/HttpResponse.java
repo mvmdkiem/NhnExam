@@ -13,7 +13,11 @@ import com.nhn.exam.was.model.request.HttpRequest;
 
 import lombok.Getter;
 import lombok.Setter;
-
+/**
+ * 
+ * @author Kim TaeHouyng
+ *
+ */
 public class HttpResponse {
 	private static Logger logger = LoggerFactory.getLogger(HttpRequest.class);
 

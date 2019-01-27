@@ -7,7 +7,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.nhn.exam.was.utils.DefaultServerConfig;
-
+/**
+ * 
+ * @author Kim TaeHouyng
+ *
+ */
 public class HttpRequest {
 	private static Logger logger = LoggerFactory.getLogger(HttpRequest.class);
 	private InputStream inputStream;

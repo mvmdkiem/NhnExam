@@ -6,8 +6,8 @@ import com.nhn.exam.was.model.response.HttpResponse;
  * 
  * @author Kim TaeHouyng
  *
- * @param <T> Object 
- * @param <V> String 
+ * @param HttpRequest req 
+ * @param HttpResponse res 
  * 
  */
 public interface SimpleServlet {

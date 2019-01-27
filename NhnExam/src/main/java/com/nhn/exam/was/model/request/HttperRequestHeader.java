@@ -4,7 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 import lombok.Getter;
-
+/**
+ * 
+ * @author Kim TaeHouyng
+ *
+ */
 public class HttperRequestHeader {
 	@Getter
 	private String host;

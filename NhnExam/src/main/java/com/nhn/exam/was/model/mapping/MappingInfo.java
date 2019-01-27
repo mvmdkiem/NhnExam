@@ -4,7 +4,11 @@ import java.util.List;
 
 import lombok.Getter;
 import lombok.Setter;
-
+/**
+ * 
+ * @author Kim TaeHouyng
+ *
+ */
 public class MappingInfo {
 	@Getter @Setter	
 	private String name;

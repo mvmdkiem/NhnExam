@@ -19,7 +19,11 @@ import com.nhn.exam.was.utils.DefaultServerConfig;
 import com.nhn.exam.was.utils.MappingConfig;
 import com.nhn.exam.was.utils.ServerConfig;
 import com.nhn.exam.was.utils.UrlCheckUtils;
-
+/**
+ * 
+ * @author Kim TaeHouyng
+ *
+ */
 public class HttpHandler implements Runnable {
 	private static Logger logger = LoggerFactory.getLogger(HttpHandler.class);
 	private Socket socket;

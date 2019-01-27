@@ -11,7 +11,11 @@ import org.slf4j.LoggerFactory;
 
 import com.nhn.exam.was.handler.HttpHandler;
 import com.nhn.exam.was.utils.DefaultServerConfig;
-
+/**
+ * 
+ * @author Kim TaeHouyng
+ *
+ */
 public class ServerStarter {
     private static Logger logger = LoggerFactory.getLogger(ServerStarter.class);
 

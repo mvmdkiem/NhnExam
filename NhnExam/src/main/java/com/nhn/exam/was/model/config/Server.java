@@ -2,7 +2,11 @@ package com.nhn.exam.was.model.config;
 
 import lombok.Getter;
 import lombok.Setter;
-
+/**
+ * 
+ * @author Kim TaeHouyng
+ *
+ */
 public class Server {
 	@Getter @Setter	
 	private String name;
