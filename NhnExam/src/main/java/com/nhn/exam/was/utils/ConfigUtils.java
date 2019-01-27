@@ -51,7 +51,6 @@ public class ConfigUtils {
         if(instance == null) {
             try {
                 instance = new ConfigUtils();
-                System.out.println("prot : "  + PORT);
             } catch (Exception e) {
                 logger.error(e.getMessage(), e);
             }

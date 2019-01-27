@@ -4,8 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.nhn</groupId>
-	<artifactId>NhnExam</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>was</artifactId>
 	<packaging>jar</packaging>
 
 	<name>NhnExam</name>
@@ -95,6 +94,34 @@
 					<parallel>methods</parallel>
 					<threadCount>10</threadCount>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<transformers>
+								<transformer
+									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+									<mainClass>com.nhn.exam.ServerStarter</mainClass>
+								</transformer>
+							</transformers>
+							<filter>
+								<artifact>junit:junit</artifact>
+								<includes>
+									<include>junit/**</include>
+									<include>org/junit/**</include>
+								</includes>
+							</filter>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

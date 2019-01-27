@@ -4,7 +4,6 @@ import java.util.List;
 
 public class UrlUtils {
     public static boolean checkBlockedExtension(String url, List<String> filter) throws ArrayIndexOutOfBoundsException {
-    	System.out.println("url test : " + url);
     	if(url == null) {
     		return false;
         }
