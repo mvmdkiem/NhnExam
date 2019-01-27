@@ -2,7 +2,7 @@
 환경 설정
 1. Git, SVN 을 사용 (Git에 연동 완료)
 2. mvn clean package 했을 때, JUnit 을 수행 (maven-surefire-plugin 사용하여 maven test, maven install시에 junit 기동 확인)
-3. java –jar was.jar 해서 실행 (maven-shade-plugin 사용하여 uber-jar 생성 후 window에서 확인)
+3. java –jar was.jar 해서 실행 (maven-shade-plugin 사용하여 uber-jar 생성 후 window에서 확인, 명령어는 경로 + java -jar was-0.0.1.jar)
 4. Java 표준 라이브러리 외 다른 네트워크 프레임워크(예, Netty)를 사용하지 말아주세요 (jackson, lombock, typesafe  사용)
 
 
