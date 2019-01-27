@@ -10,7 +10,7 @@
 1. HTTP/1.1 의 Host 헤더를 해석 (logback을 이용하여 콘솔에 출력되도록 함) 
 2. 다음 사항을 설정 파일로 관리하세요. (serverConfig.json 파일에서 관리하도록 함)
 3. 403, 404, 500 오류를 처리합니다 (HttpHandler 클래스에서 처리하도록 함)
-4. HTTP_ROOT 디렉터리의 상위 디렉터리에 접근, 확장자가 .exe 인 파일을 요청시에 403 코드 반환 (완료)
+4. HTTP_ROOT 디렉터리의 상위 디렉터리에 접근, 확장자가 .exe 인 파일을 요청시에 403 코드 반환 (완료 단 ../ 등 상위 디렉토리 접근은 브라우저의 자동 url 체크 기능으로 인해 포스트맨으로 테스트함.)
 5. logback을 이용한 로깅 작업 (하루 단위로 분리 되도록 설정 완료, Test용은 debug, 꼭 필요한 정보는 info로 출력 로그 레벨은 info, 
 error시에는 e.getMessage가 로그 파일에 출력되도록 작성)
 6. SimpleServlet 구현 (모든 Servlert이 SimpleServlet을 상속받아 구현)
