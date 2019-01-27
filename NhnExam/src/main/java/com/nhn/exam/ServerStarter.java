@@ -23,11 +23,12 @@ public class ServerStarter {
     }
 	
 	public void start() throws Exception {
-		//MUlTI THREAD -> ExecutorService LIB
+		//ExecutorService 사용하여 MUlTI THREAD 관리
         ExecutorService pool = Executors.newFixedThreadPool(SERVER_COUNT);
         try (ServerSocket server = new ServerSocket(port)) {
             while (true) {
-                try (Socket request = server.accept()){
+                try {
+                	Socket request = server.accept();
                     Runnable run = new HttpHandler(request);
                     pool.submit(run);
                 } catch (IOException e) {

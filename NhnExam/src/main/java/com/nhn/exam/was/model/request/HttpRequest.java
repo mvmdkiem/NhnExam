@@ -10,76 +10,76 @@ import com.nhn.exam.was.utils.ConfigUtils;
 
 public class HttpRequest {
 	private static Logger logger = LoggerFactory.getLogger(HttpRequest.class);
-    private InputStream inputStream;
-    private String url;
-    private HttperRequestHeader header;
+	private InputStream inputStream;
+	private String url;
+	private HttperRequestHeader header;
 
-    public HttpRequest(InputStream inputStream) {
-        this.inputStream = inputStream;
-    }
-    
-    public void parse() {
-        int i;
+	public HttpRequest(InputStream inputStream) {
+		this.inputStream = inputStream;
+	}
 
-        StringBuffer rbf = new StringBuffer(2048);
-        byte[] buffer = new byte[2048];
+	public void parse() {
+		int i;
 
-        try {
-            i = inputStream.read(buffer);
-        } catch (IOException e) {
-            logger.warn(e.getMessage(), e);
-            i = -1;
-        }
+		StringBuffer rbf = new StringBuffer(2048);
+		byte[] buffer = new byte[2048];
 
-        for (int j=0; j<i; j++) {
-            rbf.append((char)buffer[j]);
-        }
+		try {
+			i = inputStream.read(buffer);
+		} catch (IOException e) {
+			logger.warn(e.getMessage(), e);
+			i = -1;
+		}
 
-        this.url = this.parseUri(rbf.toString());
+		for (int j = 0; j < i; j++) {
+			rbf.append((char) buffer[j]);
+		}
 
-        this.checkDomain();
-    }
+		this.url = this.parseUri(rbf.toString());
 
-    private String parseUri (String rs) {
-        int idx1;
-        idx1 = rs.indexOf(" ");
+		this.checkDomain();
+	}
 
-        if(idx1 != -1) {
-            String[] tokens = rs.split("\\r\\n");
+	private String parseUri(String rs) {
+		int idx1;
+		idx1 = rs.indexOf(" ");
 
-            this.header = new HttperRequestHeader(tokens);
+		if (idx1 != -1) {
+			String[] tokens = rs.split("\\r\\n");
 
-            return this.header.getAccessFile();
-        }
+			this.header = new HttperRequestHeader(tokens);
 
-        return null;
-    }
+			return this.header.getAccessFile();
+		}
 
-    private void checkDomain() throws NullPointerException {
-        ConfigUtils config = ConfigUtils.getInstance();
-        if(this.header != null) {
-        	config.getServers().setDefaultServerDomain(this.header.getHost());
-        }
-    }
+		return null;
+	}
 
-    public String getUrl () {
-        return this.url;
-    }
+	private void checkDomain() throws NullPointerException {
+		ConfigUtils config = ConfigUtils.getInstance();
+		if (this.header != null) {
+			config.getServers().setDefaultServerDomain(this.header.getHost());
+		}
+	}
 
-    public HttperRequestHeader getHeader() {
-        return this.header;
-    }
+	public String getUrl() {
+		return this.url;
+	}
 
-    public String getParameter(String param) {
-        return this.header.getParam(param);
-    }
+	public HttperRequestHeader getHeader() {
+		return this.header;
+	}
 
-    @Override
-    public String toString() {
-        if(this.header != null) {
-            return "Request: {" + this.header.toString() + "}";
-        } else {
-            return "";
-        }
-    }
+	public String getParameter(String param) {
+		return this.header.getParam(param);
+	}
+
+	@Override
+	public String toString() {
+		if (this.header != null) {
+			return "Request: {" + this.header.toString() + "}";
+		} else {
+			return "";
+		}
+	}
 }

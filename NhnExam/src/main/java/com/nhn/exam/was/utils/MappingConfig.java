@@ -1,17 +1,12 @@
 package com.nhn.exam.was.utils;
 
-import java.nio.file.Files;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.nhn.exam.was.model.Router;
 import com.nhn.exam.was.model.request.HttpRequest;
 import com.nhn.exam.was.model.response.HttpResponse;
 import com.nhn.exam.was.servlet.SimpleServlet;

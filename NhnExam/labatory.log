@@ -2849,3 +2849,423 @@ java.lang.NullPointerException: null
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:05:15.781 ERROR 3476 --- [ pool-1-thread-1 ] c.nhn.exam.was.handler.HttpHandler - Socket is closed
+java.net.SocketException: Socket is closed
+	at java.net.Socket.getInputStream(Socket.java:903)
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:05:15.781 ERROR 3476 --- [ pool-1-thread-2 ] c.nhn.exam.was.handler.HttpHandler - Socket is closed
+java.net.SocketException: Socket is closed
+	at java.net.Socket.getInputStream(Socket.java:903)
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:05:15.781 ERROR 3476 --- [ pool-1-thread-3 ] c.nhn.exam.was.handler.HttpHandler - Socket is closed
+java.net.SocketException: Socket is closed
+	at java.net.Socket.getInputStream(Socket.java:903)
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:05:15.994 DEBUG 3689 --- [ pool-1-thread-1 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:05:15.994 DEBUG 3689 --- [ pool-1-thread-2 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:05:15.994 DEBUG 3689 --- [ pool-1-thread-3 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:05:16.008 DEBUG 3703 --- [ pool-1-thread-1 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:05:16.008 DEBUG 3703 --- [ pool-1-thread-2 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:05:16.008 DEBUG 3703 --- [ pool-1-thread-3 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:05:16.009 ERROR 3704 --- [ pool-1-thread-1 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:64)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:05:16.009 ERROR 3704 --- [ pool-1-thread-2 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:64)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:05:16.009 ERROR 3704 --- [ pool-1-thread-3 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:64)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:05:16.018 ERROR 3713 --- [ pool-1-thread-3 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:05:16.018 ERROR 3713 --- [ pool-1-thread-2 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:05:16.018 ERROR 3713 --- [ pool-1-thread-1 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:05:39.850 ERROR 2302 --- [ pool-1-thread-2 ] c.nhn.exam.was.handler.HttpHandler - Socket is closed
+java.net.SocketException: Socket is closed
+	at java.net.Socket.getInputStream(Socket.java:903)
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:05:39.850 ERROR 2302 --- [ pool-1-thread-3 ] c.nhn.exam.was.handler.HttpHandler - Socket is closed
+java.net.SocketException: Socket is closed
+	at java.net.Socket.getInputStream(Socket.java:903)
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:05:39.850 ERROR 2302 --- [ pool-1-thread-1 ] c.nhn.exam.was.handler.HttpHandler - Socket is closed
+java.net.SocketException: Socket is closed
+	at java.net.Socket.getInputStream(Socket.java:903)
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:05:40.059 DEBUG 2511 --- [ pool-1-thread-2 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:05:40.059 DEBUG 2511 --- [ pool-1-thread-1 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:05:40.059 DEBUG 2511 --- [ pool-1-thread-3 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:05:40.069 DEBUG 2521 --- [ pool-1-thread-3 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:05:40.069 DEBUG 2521 --- [ pool-1-thread-1 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:05:40.069 DEBUG 2521 --- [ pool-1-thread-2 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:05:40.070 ERROR 2522 --- [ pool-1-thread-2 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:64)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:05:40.070 ERROR 2522 --- [ pool-1-thread-3 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:64)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:05:40.070 ERROR 2522 --- [ pool-1-thread-1 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:64)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:05:40.078 ERROR 2530 --- [ pool-1-thread-3 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:05:40.078 ERROR 2530 --- [ pool-1-thread-1 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:05:40.078 ERROR 2530 --- [ pool-1-thread-2 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:06:58.503 ERROR 3183 --- [ pool-1-thread-3 ] c.nhn.exam.was.handler.HttpHandler - Socket is closed
+java.net.SocketException: Socket is closed
+	at java.net.Socket.getInputStream(Socket.java:903)
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:06:58.503 ERROR 3183 --- [ pool-1-thread-2 ] c.nhn.exam.was.handler.HttpHandler - Socket is closed
+java.net.SocketException: Socket is closed
+	at java.net.Socket.getInputStream(Socket.java:903)
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:06:58.536 ERROR 3216 --- [ pool-1-thread-1 ] c.nhn.exam.was.handler.HttpHandler - Socket is closed
+java.net.SocketException: Socket is closed
+	at java.net.Socket.getInputStream(Socket.java:903)
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:06:58.719 DEBUG 3399 --- [ pool-1-thread-2 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:06:58.719 DEBUG 3399 --- [ pool-1-thread-1 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:06:58.719 DEBUG 3399 --- [ pool-1-thread-3 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:06:58.728 DEBUG 3408 --- [ pool-1-thread-3 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:06:58.728 DEBUG 3408 --- [ pool-1-thread-2 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:06:58.728 DEBUG 3408 --- [ pool-1-thread-1 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:06:58.729 ERROR 3409 --- [ pool-1-thread-3 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:64)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:06:58.729 ERROR 3409 --- [ pool-1-thread-1 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:64)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:06:58.729 ERROR 3409 --- [ pool-1-thread-2 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:64)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:06:58.736 ERROR 3416 --- [ pool-1-thread-2 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:06:58.736 ERROR 3416 --- [ pool-1-thread-1 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:06:58.736 ERROR 3416 --- [ pool-1-thread-3 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:11:13.592 ERROR 3964 --- [ pool-1-thread-2 ] c.nhn.exam.was.handler.HttpHandler - Socket is closed
+java.net.SocketException: Socket is closed
+	at java.net.Socket.getInputStream(Socket.java:903)
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:11:13.592 ERROR 3964 --- [ pool-1-thread-1 ] c.nhn.exam.was.handler.HttpHandler - Socket is closed
+java.net.SocketException: Socket is closed
+	at java.net.Socket.getInputStream(Socket.java:903)
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:11:13.592 ERROR 3964 --- [ pool-1-thread-3 ] c.nhn.exam.was.handler.HttpHandler - Socket is closed
+java.net.SocketException: Socket is closed
+	at java.net.Socket.getInputStream(Socket.java:903)
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:11:13.826 DEBUG 4198 --- [ pool-1-thread-2 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:11:13.826 DEBUG 4198 --- [ pool-1-thread-3 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:11:13.826 DEBUG 4198 --- [ pool-1-thread-1 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:11:13.839 DEBUG 4211 --- [ pool-1-thread-2 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:11:13.839 DEBUG 4211 --- [ pool-1-thread-1 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:11:13.839 DEBUG 4211 --- [ pool-1-thread-3 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:11:13.841 ERROR 4213 --- [ pool-1-thread-3 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:64)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:11:13.841 ERROR 4213 --- [ pool-1-thread-2 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:64)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:11:13.841 ERROR 4213 --- [ pool-1-thread-1 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:64)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:11:13.849 ERROR 4221 --- [ pool-1-thread-2 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:11:13.849 ERROR 4221 --- [ pool-1-thread-3 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:11:13.849 ERROR 4221 --- [ pool-1-thread-1 ] c.nhn.exam.was.handler.HttpHandler - null
+java.lang.NullPointerException: null
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:12:48.850 INFO  2828 --- [ pool-1-thread-1 ] c.nhn.exam.was.handler.HttpHandler - Request: {HttperRequestHeader [host=localhost, method=GET, accessFile=/time, version=HTTP/1.1, params={}]}
+2019-01-27 15:12:48.852 INFO  2830 --- [ pool-1-thread-1 ] c.nhn.exam.was.handler.HttpHandler - HttpResponse [output=java.io.BufferedOutputStream@7eec4b9e, out=null, version=null, responseCode=null, contentType=null, length=0]
+2019-01-27 15:12:49.021 DEBUG 2999 --- [ pool-1-thread-1 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:12:49.030 DEBUG 3008 --- [ pool-1-thread-1 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:49.031 DEBUG 3009 --- [ pool-1-thread-1 ] c.nhn.exam.was.handler.HttpHandler - HTML File PATH : C:\Users\mvmdk\git\nhnExam\NhnExam/src/main/webapp1/WEB-INF/time
+2019-01-27 15:12:49.031 DEBUG 3009 --- [ pool-1-thread-1 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:49.031 DEBUG 3009 --- [ pool-1-thread-1 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : com.nhn.exam.was.servlet.impl.TimeServlet
+2019-01-27 15:12:49.031 DEBUG 3009 --- [ pool-1-thread-1 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:49.031 DEBUG 3009 --- [ pool-1-thread-1 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : com.nhn.exam.was.servlet.impl.TimeServlet
+2019-01-27 15:12:49.031 DEBUG 3009 --- [ pool-1-thread-1 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:49.032 DEBUG 3010 --- [ pool-1-thread-1 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : com.nhn.exam.was.servlet.impl.TimeServlet
+2019-01-27 15:12:49.145 INFO  3123 --- [ pool-1-thread-2 ] c.nhn.exam.was.handler.HttpHandler - Request: {HttperRequestHeader [host=localhost, method=GET, accessFile=/favicon.ico, version=HTTP/1.1, params={}]}
+2019-01-27 15:12:49.145 INFO  3123 --- [ pool-1-thread-2 ] c.nhn.exam.was.handler.HttpHandler - HttpResponse [output=java.io.BufferedOutputStream@3631f1a4, out=null, version=null, responseCode=null, contentType=null, length=0]
+2019-01-27 15:12:49.145 DEBUG 3123 --- [ pool-1-thread-2 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:12:49.145 DEBUG 3123 --- [ pool-1-thread-2 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:49.147 ERROR 3125 --- [ pool-1-thread-2 ] c.nhn.exam.was.handler.HttpHandler - ERROR : NONE FAVICON
+java.lang.Exception: ERROR : NONE FAVICON
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:74)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:12:49.158 INFO  3136 --- [ pool-1-thread-2 ] c.nhn.exam.was.handler.HttpHandler - HttpResponse [output=java.io.BufferedOutputStream@3631f1a4, out=java.io.OutputStreamWriter@2a92e366, version=HTTP/1.1, responseCode=500, contentType=text/html charset=utf-8, length=90]
+2019-01-27 15:12:52.372 INFO  6350 --- [ pool-1-thread-3 ] c.nhn.exam.was.handler.HttpHandler - Request: {HttperRequestHeader [host=localhost, method=GET, accessFile=/time, version=HTTP/1.1, params={}]}
+2019-01-27 15:12:52.372 INFO  6350 --- [ pool-1-thread-3 ] c.nhn.exam.was.handler.HttpHandler - HttpResponse [output=java.io.BufferedOutputStream@6c499928, out=null, version=null, responseCode=null, contentType=null, length=0]
+2019-01-27 15:12:52.373 DEBUG 6351 --- [ pool-1-thread-3 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:12:52.373 DEBUG 6351 --- [ pool-1-thread-3 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:52.373 DEBUG 6351 --- [ pool-1-thread-3 ] c.nhn.exam.was.handler.HttpHandler - HTML File PATH : C:\Users\mvmdk\git\nhnExam\NhnExam/src/main/webapp1/WEB-INF/time
+2019-01-27 15:12:52.374 DEBUG 6352 --- [ pool-1-thread-3 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:52.374 DEBUG 6352 --- [ pool-1-thread-3 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : com.nhn.exam.was.servlet.impl.TimeServlet
+2019-01-27 15:12:52.374 DEBUG 6352 --- [ pool-1-thread-3 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:52.375 DEBUG 6353 --- [ pool-1-thread-3 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : com.nhn.exam.was.servlet.impl.TimeServlet
+2019-01-27 15:12:52.375 DEBUG 6353 --- [ pool-1-thread-3 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:52.375 DEBUG 6353 --- [ pool-1-thread-3 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : com.nhn.exam.was.servlet.impl.TimeServlet
+2019-01-27 15:12:52.468 INFO  6446 --- [ pool-1-thread-4 ] c.nhn.exam.was.handler.HttpHandler - Request: {HttperRequestHeader [host=localhost, method=GET, accessFile=/favicon.ico, version=HTTP/1.1, params={}]}
+2019-01-27 15:12:52.468 INFO  6446 --- [ pool-1-thread-4 ] c.nhn.exam.was.handler.HttpHandler - HttpResponse [output=java.io.BufferedOutputStream@6cbf562c, out=null, version=null, responseCode=null, contentType=null, length=0]
+2019-01-27 15:12:52.468 DEBUG 6446 --- [ pool-1-thread-4 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:12:52.468 DEBUG 6446 --- [ pool-1-thread-4 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:52.468 ERROR 6446 --- [ pool-1-thread-4 ] c.nhn.exam.was.handler.HttpHandler - ERROR : NONE FAVICON
+java.lang.Exception: ERROR : NONE FAVICON
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:74)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:12:52.470 INFO  6448 --- [ pool-1-thread-4 ] c.nhn.exam.was.handler.HttpHandler - HttpResponse [output=java.io.BufferedOutputStream@6cbf562c, out=java.io.OutputStreamWriter@6278a5cb, version=HTTP/1.1, responseCode=500, contentType=text/html charset=utf-8, length=90]
+2019-01-27 15:12:53.022 INFO  7000 --- [ pool-1-thread-5 ] c.nhn.exam.was.handler.HttpHandler - Request: {HttperRequestHeader [host=localhost, method=GET, accessFile=/time, version=HTTP/1.1, params={}]}
+2019-01-27 15:12:53.026 INFO  7004 --- [ pool-1-thread-5 ] c.nhn.exam.was.handler.HttpHandler - HttpResponse [output=java.io.BufferedOutputStream@5114ef8e, out=null, version=null, responseCode=null, contentType=null, length=0]
+2019-01-27 15:12:53.026 DEBUG 7004 --- [ pool-1-thread-5 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:12:53.026 DEBUG 7004 --- [ pool-1-thread-5 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:53.026 DEBUG 7004 --- [ pool-1-thread-5 ] c.nhn.exam.was.handler.HttpHandler - HTML File PATH : C:\Users\mvmdk\git\nhnExam\NhnExam/src/main/webapp1/WEB-INF/time
+2019-01-27 15:12:53.027 DEBUG 7005 --- [ pool-1-thread-5 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:53.027 DEBUG 7005 --- [ pool-1-thread-5 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : com.nhn.exam.was.servlet.impl.TimeServlet
+2019-01-27 15:12:53.027 DEBUG 7005 --- [ pool-1-thread-5 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:53.028 DEBUG 7006 --- [ pool-1-thread-5 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : com.nhn.exam.was.servlet.impl.TimeServlet
+2019-01-27 15:12:53.028 DEBUG 7006 --- [ pool-1-thread-5 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:53.028 DEBUG 7006 --- [ pool-1-thread-5 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : com.nhn.exam.was.servlet.impl.TimeServlet
+2019-01-27 15:12:53.107 INFO  7085 --- [ pool-1-thread-6 ] c.nhn.exam.was.handler.HttpHandler - Request: {HttperRequestHeader [host=localhost, method=GET, accessFile=/favicon.ico, version=HTTP/1.1, params={}]}
+2019-01-27 15:12:53.107 INFO  7085 --- [ pool-1-thread-6 ] c.nhn.exam.was.handler.HttpHandler - HttpResponse [output=java.io.BufferedOutputStream@4ac80d4, out=null, version=null, responseCode=null, contentType=null, length=0]
+2019-01-27 15:12:53.107 DEBUG 7085 --- [ pool-1-thread-6 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:12:53.107 DEBUG 7085 --- [ pool-1-thread-6 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:53.107 ERROR 7085 --- [ pool-1-thread-6 ] c.nhn.exam.was.handler.HttpHandler - ERROR : NONE FAVICON
+java.lang.Exception: ERROR : NONE FAVICON
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:74)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:12:53.108 INFO  7086 --- [ pool-1-thread-6 ] c.nhn.exam.was.handler.HttpHandler - HttpResponse [output=java.io.BufferedOutputStream@4ac80d4, out=java.io.OutputStreamWriter@a6b6e31, version=HTTP/1.1, responseCode=500, contentType=text/html charset=utf-8, length=90]
+2019-01-27 15:12:53.396 INFO  7374 --- [ pool-1-thread-7 ] c.nhn.exam.was.handler.HttpHandler - Request: {HttperRequestHeader [host=localhost, method=GET, accessFile=/time, version=HTTP/1.1, params={}]}
+2019-01-27 15:12:53.396 INFO  7374 --- [ pool-1-thread-7 ] c.nhn.exam.was.handler.HttpHandler - HttpResponse [output=java.io.BufferedOutputStream@57671c8d, out=null, version=null, responseCode=null, contentType=null, length=0]
+2019-01-27 15:12:53.396 DEBUG 7374 --- [ pool-1-thread-7 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:12:53.396 DEBUG 7374 --- [ pool-1-thread-7 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:53.396 DEBUG 7374 --- [ pool-1-thread-7 ] c.nhn.exam.was.handler.HttpHandler - HTML File PATH : C:\Users\mvmdk\git\nhnExam\NhnExam/src/main/webapp1/WEB-INF/time
+2019-01-27 15:12:53.397 DEBUG 7375 --- [ pool-1-thread-7 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:53.397 DEBUG 7375 --- [ pool-1-thread-7 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : com.nhn.exam.was.servlet.impl.TimeServlet
+2019-01-27 15:12:53.397 DEBUG 7375 --- [ pool-1-thread-7 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:53.397 DEBUG 7375 --- [ pool-1-thread-7 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : com.nhn.exam.was.servlet.impl.TimeServlet
+2019-01-27 15:12:53.397 DEBUG 7375 --- [ pool-1-thread-7 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:53.397 DEBUG 7375 --- [ pool-1-thread-7 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : com.nhn.exam.was.servlet.impl.TimeServlet
+2019-01-27 15:12:53.491 INFO  7469 --- [ pool-1-thread-8 ] c.nhn.exam.was.handler.HttpHandler - Request: {HttperRequestHeader [host=localhost, method=GET, accessFile=/favicon.ico, version=HTTP/1.1, params={}]}
+2019-01-27 15:12:53.492 INFO  7470 --- [ pool-1-thread-8 ] c.nhn.exam.was.handler.HttpHandler - HttpResponse [output=java.io.BufferedOutputStream@1efe555c, out=null, version=null, responseCode=null, contentType=null, length=0]
+2019-01-27 15:12:53.492 DEBUG 7470 --- [ pool-1-thread-8 ] com.nhn.exam.was.utils.ServerConfig - HOST INFO : Host [name=was, port=8080, filter=[exe], server=[Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]]
+2019-01-27 15:12:53.492 DEBUG 7470 --- [ pool-1-thread-8 ] c.nhn.exam.was.utils.MappingConfig - Maping INFO : {mappingInfo=[{name=com.nhn.exam.was.servlet.impl, route={/service.Hello=HelloServlet, /service.Greeting=HelloServlet, /service.time=TimeServlet}}, {name=com.nhn.exam.was.servlet.impl, route={/Hello=HelloServlet, /Greeting=HelloServlet, /time=TimeServlet}}]}
+2019-01-27 15:12:53.492 ERROR 7470 --- [ pool-1-thread-8 ] c.nhn.exam.was.handler.HttpHandler - ERROR : NONE FAVICON
+java.lang.Exception: ERROR : NONE FAVICON
+	at com.nhn.exam.was.handler.HttpHandler.run(HttpHandler.java:74)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-27 15:12:53.493 INFO  7471 --- [ pool-1-thread-8 ] c.nhn.exam.was.handler.HttpHandler - HttpResponse [output=java.io.BufferedOutputStream@1efe555c, out=java.io.OutputStreamWriter@1039b8f3, version=HTTP/1.1, responseCode=500, contentType=text/html charset=utf-8, length=90]
