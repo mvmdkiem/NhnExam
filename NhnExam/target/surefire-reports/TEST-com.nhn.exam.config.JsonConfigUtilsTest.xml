@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.nhn.exam.config.JsonConfigUtilsTest" time="0.424" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.nhn.exam.config.JsonConfigUtilsTest" time="0.4" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="KR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\mvmdk\AppData\Local\Temp\surefire4551403335335102711\surefirebooter5350177024271122385.jar C:\Users\mvmdk\AppData\Local\Temp\surefire4551403335335102711 2019-01-27T20-29-08_636-jvmRun1 surefire7961106834282120430tmp surefire_0870471913174627913tmp"/>
+    <property name="sun.java.command" value="C:\Users\mvmdk\AppData\Local\Temp\surefire4211183411339424948\surefirebooter2593329708247003323.jar C:\Users\mvmdk\AppData\Local\Temp\surefire4211183411339424948 2019-01-27T20-29-50_289-jvmRun1 surefire8830249978295528185tmp surefire_04392463348292270272tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\mvmdk\git\nhnExam\NhnExam\target\test-classes;C:\Users\mvmdk\git\nhnExam\NhnExam\target\classes;C:\Users\mvmdk\.m2\repository\junit\junit\4.7\junit-4.7.jar;C:\Users\mvmdk\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\mvmdk\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\mvmdk\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\mvmdk\.m2\repository\org\projectlombok\lombok\1.16.22\lombok-1.16.22.jar;C:\Users\mvmdk\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;C:\Users\mvmdk\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;C:\Users\mvmdk\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\mvmdk\.m2\repository\com\googlecode\json-simple\json-simple\1.1\json-simple-1.1.jar;C:\Users\mvmdk\.m2\repository\com\typesafe\config\1.3.1\config-1.3.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\mvmdk"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\mvmdk\AppData\Local\Temp\surefire4551403335335102711\surefirebooter5350177024271122385.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\mvmdk\AppData\Local\Temp\surefire4211183411339424948\surefirebooter2593329708247003323.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,5 +60,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="jsonConfigTest" classname="com.nhn.exam.config.JsonConfigUtilsTest" time="0.424"/>
+  <testcase name="jsonConfigTest" classname="com.nhn.exam.config.JsonConfigUtilsTest" time="0.4"/>
 </testsuite>
