@@ -2587,3 +2587,8 @@ java.lang.Exception: ERROR : NONE FAVICON
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 2019-01-27 20:10:04.587 INFO  8810 --- [ pool-1-thread-4 ] c.nhn.exam.was.handler.HttpHandler - HttpResponse [output=java.io.BufferedOutputStream@3a762db2, out=java.io.OutputStreamWriter@34b1c48c, version=HTTP/1.1, responseCode=500, contentType=text/html charset=utf-8, length=90]
+2019-01-27 20:29:10.283 INFO  410  --- [ pool-1-thread-1 ] c.n.exam.config.JsonConfigUtilsTest - was
+2019-01-27 20:29:10.286 INFO  413  --- [ pool-1-thread-1 ] c.n.exam.config.JsonConfigUtilsTest - 8080
+2019-01-27 20:29:10.286 INFO  413  --- [ pool-1-thread-1 ] c.n.exam.config.JsonConfigUtilsTest - [exe]
+2019-01-27 20:29:10.286 INFO  413  --- [ pool-1-thread-1 ] c.n.exam.config.JsonConfigUtilsTest - [Server [name=was, root=/src/main/webapp1/WEB-INF, domain=www.server1.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]], Server [name=simple, root=/src/main/webapp2/WEB-INF, domain=www.server2.com, html=Html [index=index.html, page403=/403.html, page404=/404.html, page500=/500.html]]]
+2019-01-27 20:29:10.306 INFO  433  --- [ pool-1-thread-2 ] c.n.e.config.MappingConfigUtilsTest - com.nhn.exam.was.servlet.impl.HelloServlet
