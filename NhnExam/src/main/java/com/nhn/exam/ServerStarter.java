@@ -10,7 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.nhn.exam.was.handler.HttpHandler;
-import com.nhn.exam.was.utils.ConfigUtils;
+import com.nhn.exam.was.utils.DefaultServerConfig;
 
 public class ServerStarter {
     private static Logger logger = LoggerFactory.getLogger(ServerStarter.class);
@@ -39,7 +39,7 @@ public class ServerStarter {
     }
 	
 	public static void main(String[] ar) {
-		ConfigUtils properties = ConfigUtils.getInstance();
+		DefaultServerConfig properties = DefaultServerConfig.getInstance();
 
         try {
         	ServerStarter serverStart = new ServerStarter(properties.getPort());

@@ -12,13 +12,19 @@ import com.nhn.exam.was.model.request.HttpRequest;
 import com.nhn.exam.was.model.response.HttpResponse;
 import com.nhn.exam.was.servlet.SimpleServlet;
 
+/**
+ * 
+ * @author Kim TaeHouyng
+ *
+ */
 public class TimeServlet implements SimpleServlet{
 	private static Logger logger = LoggerFactory.getLogger(HelloServlet.class);
     @Override
     public void service(HttpRequest req, HttpResponse res) throws IOException {
-        Writer writer = res.getWriter();
         long time = System.currentTimeMillis();
         SimpleDateFormat dayTime = new SimpleDateFormat("yyyy-MM-dd kk:mm:ss");
+        
+        Writer writer = res.getWriter();
         writer.write(dayTime.format(new Date(time)));
     }
 }

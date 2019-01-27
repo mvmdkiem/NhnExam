@@ -15,15 +15,15 @@ import com.nhn.exam.was.servlet.SimpleServlet;
  * @author Kim TaeHouyng
  *
  */
-public class HelloServlet implements SimpleServlet {
-	private static Logger logger = LoggerFactory.getLogger(HelloServlet.class);
+public class TestServlet implements SimpleServlet {
+	private static Logger logger = LoggerFactory.getLogger(TestServlet.class);
 	
     @Override
     public void service(HttpRequest req, HttpResponse res) throws IOException {
     	logger.info("REQUEST  : " + req.toString());
     	logger.info("RESPONSE : " + res.toString());
         Writer writer = res.getWriter();
-        writer.write("Hello World.");
+        writer.write("Test Page");
         writer.write(req.getParameter("name"));
         writer.flush();
     }

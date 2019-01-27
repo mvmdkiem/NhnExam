@@ -19,28 +19,27 @@ public class HttperRequestHeader {
 
 	@Override
 	public String toString() {
-		return "HttperRequestHeader [host=" + host + ", method=" + method + ", accessFile=" + accessFile + ", version="
-				+ version + ", params=" + params + "]";
+		return "HttperRequestHeader [host=" + host + ", method=" + method + ", accessFile=" + accessFile + ", version=" + version + ", params=" + params + "]";
 	}
 
 	public HttperRequestHeader(String[] arr) {
-		String[] strHeader = arr[0].split("\\s+");
-		String[] strHost = arr[1].split(":");
-		this.host = strHost[1].trim();
-		this.method = strHeader[0];
-		if (strHeader[1].indexOf("?") > -1) {
-			String[] accessFiles = strHeader[1].split("\\?");
+		String[] headers = arr[0].split("\\s+");
+		String[] hosts = arr[1].split(":");
+		this.host = hosts[1].trim();
+		this.method = headers[0];
+		if (headers[1].indexOf("?") > -1) {
+			String[] accessFiles = headers[1].split("\\?");
 			String[] queryString = accessFiles[1].split("\\&");
 			for (String qs : queryString) {
 				String[] query = qs.split("=");
 				params.put(query[0], query[1]);
 			}
-			strHeader[1] = accessFiles[0];
+			headers[1] = accessFiles[0];
 		}
-		this.accessFile = strHeader[1];
+		this.accessFile = headers[1];
 
-		if (strHeader.length > 2) {
-			this.version = strHeader[2];
+		if (headers.length > 2) {
+			this.version = headers[2];
 		}
 	}
 

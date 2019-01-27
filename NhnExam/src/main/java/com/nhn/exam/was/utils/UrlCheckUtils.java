@@ -6,21 +6,16 @@ import java.util.List;
  * 
  * @author Kim TaeHouyng
  *
- * @param <T> Object 
- * @param <V> String 
- * 
  */
 public class UrlCheckUtils {
-	private static List<String> filter;
-
-    public static boolean checkBlockedExtension(String url) {
+    public static boolean checkBlockedExtension(String url, List<String> filter) throws ArrayIndexOutOfBoundsException {
     	if(url == null) {
     		return false;
         }
         
         if(url.indexOf(".") > -1) {
-            String[] strArr = url.split("\\.");
-            return filter.contains(strArr[1]);
+            String[] fileToken = url.split("\\.");
+            return filter.contains(fileToken[1]);
         }
         
         if (url.indexOf("../") > -1) {
@@ -34,11 +29,9 @@ public class UrlCheckUtils {
         if(fileName == null) {
             return false;
         }
-        
         if (fileName.indexOf("../") > -1) {
             return true;
         }
-        
         return false;
     }
 }

@@ -6,7 +6,7 @@ import java.io.InputStream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.nhn.exam.was.utils.ConfigUtils;
+import com.nhn.exam.was.utils.DefaultServerConfig;
 
 public class HttpRequest {
 	private static Logger logger = LoggerFactory.getLogger(HttpRequest.class);
@@ -18,7 +18,7 @@ public class HttpRequest {
 		this.inputStream = inputStream;
 	}
 
-	public void parse() {
+	public void parser() {
 		int i;
 
 		StringBuffer rbf = new StringBuffer(2048);
@@ -56,7 +56,7 @@ public class HttpRequest {
 	}
 
 	private void checkDomain() throws NullPointerException {
-		ConfigUtils config = ConfigUtils.getInstance();
+		DefaultServerConfig config = DefaultServerConfig.getInstance();
 		if (this.header != null) {
 			config.getServers().setDefaultServerDomain(this.header.getHost());
 		}
@@ -77,7 +77,7 @@ public class HttpRequest {
 	@Override
 	public String toString() {
 		if (this.header != null) {
-			return "Request: {" + this.header.toString() + "}";
+			return "HttpRequest: [" + this.header.toString() + "]";
 		} else {
 			return "";
 		}

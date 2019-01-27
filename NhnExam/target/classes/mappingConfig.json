@@ -16,7 +16,8 @@
 				{
 					"/Hello"	: "HelloServlet",
 					"/Greeting"	: "HelloServlet",
-					"/time"		: "TimeServlet"
+					"/time"		: "TimeServlet",
+					"/test"		: "TestServlet"
 				}
 			
 		}

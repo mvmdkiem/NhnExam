@@ -5,9 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.io.Reader;
 import java.net.Socket;
 import java.nio.file.Files;
 
@@ -17,10 +15,10 @@ import org.slf4j.LoggerFactory;
 import com.nhn.exam.was.model.request.HttpRequest;
 import com.nhn.exam.was.model.response.HttpResponse;
 import com.nhn.exam.was.servlet.SimpleServlet;
-import com.nhn.exam.was.utils.ConfigUtils;
+import com.nhn.exam.was.utils.DefaultServerConfig;
 import com.nhn.exam.was.utils.MappingConfig;
 import com.nhn.exam.was.utils.ServerConfig;
-import com.nhn.exam.was.utils.UrlUtils;
+import com.nhn.exam.was.utils.UrlCheckUtils;
 
 public class HttpHandler implements Runnable {
 	private static Logger logger = LoggerFactory.getLogger(HttpHandler.class);
@@ -40,10 +38,10 @@ public class HttpHandler implements Runnable {
 			input = this.socket.getInputStream(); 
 			output = this.socket.getOutputStream();
 			
-			req = new HttpRequest(input);
+			req = new HttpRequest(input); 
 			res = new HttpResponse(new BufferedOutputStream(output));
-			req.parse();
-			
+			req.parser();
+
 			//1. Request, Response 분석
 			logger.info(req.toString());
 			logger.info(res.toString());
@@ -54,19 +52,20 @@ public class HttpHandler implements Runnable {
 		File html;
 		String root = new File("").getAbsolutePath();
 		byte[] data = new byte[0];
-		ConfigUtils properties = ConfigUtils.getInstance();
+		DefaultServerConfig properties = DefaultServerConfig.getInstance();
 
+		
 		ServerConfig serverConfig = new ServerConfig();
 		MappingConfig mappingConfig = new MappingConfig();			
 
 		try {
 			// EXE CHECK And Block Check
-			if (UrlUtils.checkBlockedExtension(req.getUrl(), serverConfig.getHost().getFilter())) {
-				throw new Exception("ERROR : URL USE THE BLOCK IS NOT PERMISSION");
-			}
+			if (UrlCheckUtils.checkBlockedExtension(req.getUrl(), serverConfig.getHost().getFilter())) {
+				throw new IOException("ERROR : UNACCEPTABLE TYPE IN URL (EX : EXE)");
+			} 
 			
-			if(UrlUtils.checkBlockRootPath(req.getUrl())) {
-                throw new IOException("ERROR : NOT ROOT ROOT");
+			if(UrlCheckUtils.checkBlockRootPath(req.getUrl())) {
+                throw new IOException("ERROR : ACCESS BY PARENT PATH");
             }
 
 			// Web Browser IN TEST GET -> /favicon.ico PASS
@@ -75,8 +74,8 @@ public class HttpHandler implements Runnable {
 			}
 			
 			String htmlPath = req.getUrl();
-			if (htmlPath.endsWith("/")) htmlPath += properties.getDefaultServer().getSource().getIndex();
-			htmlPath = root + properties.getDefaultServer().getHttproot() + htmlPath;
+			if (htmlPath.endsWith("/")) htmlPath += properties.getDefaultServer().getHtml().getIndex();
+			htmlPath = root + properties.getDefaultServer().getRoot() + properties.getDefaultServer().getRoot() + htmlPath;
 			
 			logger.debug("HTML File PATH : " + htmlPath);
 			html = new File(htmlPath);
@@ -109,7 +108,7 @@ public class HttpHandler implements Runnable {
 		} catch (FileNotFoundException e) {
 			logger.error(e.getMessage(), e);
 			try {
-				html = new File(root + properties.getDefaultServer().getPage404());
+				html = new File(root + properties.getDefaultServer().getRoot() + properties.getDefaultServer().getHtml().getPage404());
 				mappingConfig.callServlet(req, res, Files.readAllBytes(html.toPath()), "404");
 				logger.info(res.toString());
 			} catch (Exception ex) {
@@ -118,7 +117,7 @@ public class HttpHandler implements Runnable {
 		} catch (IOException e) {
 			logger.warn(e.getMessage(), e);
 			try {
-				html = new File(root + properties.getDefaultServer().getPage403());
+				html = new File(root + properties.getDefaultServer().getRoot() + properties.getDefaultServer().getHtml().getPage403());
 				mappingConfig.callServlet(req, res, Files.readAllBytes(html.toPath()), "403");
 				logger.info(res.toString());
 			} catch (Exception ex) {
@@ -127,7 +126,8 @@ public class HttpHandler implements Runnable {
 		} catch (Exception e) {
 			logger.error(e.getMessage(), e);
 			try {
-				html = new File(root + properties.getDefaultServer().getPage500());
+				
+				html = new File(root + properties.getDefaultServer().getRoot() + properties.getDefaultServer().getHtml().getPage500());
 				mappingConfig.callServlet(req, res, Files.readAllBytes(html.toPath()), "500");
 				logger.info(res.toString());
 			} catch (Exception ex) {
@@ -137,7 +137,7 @@ public class HttpHandler implements Runnable {
 			try {
 				if(socket != null) socket.close();
 			} catch (IOException e) {
-				e.printStackTrace();
+				 logger.error(e.getMessage(), e);
 			}
 		}
 	}

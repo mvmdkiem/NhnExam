@@ -1,18 +1,16 @@
 package com.nhn.exam.was.model.mapping;
 
-import java.util.List;
-
 import lombok.Getter;
 import lombok.Setter;
 
-public class MappingInfo {
+public class MapingPath {
 	@Getter @Setter	
-	private String name;
+	private String path;
 	@Getter @Setter	
-	private List<MapingPath> route;
+	private String destination;
 	
 	@Override
 	public String toString() {
-		return "MappingInfo [name=" + name + ", route=" + route + "]";
+		return "Route [path=" + path + ", destination=" + destination + "]";
 	}
 }

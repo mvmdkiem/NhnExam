@@ -11,9 +11,6 @@ import lombok.Getter;
  * 
  * @author Kim TaeHouyng
  *
- * @param <T> Object 
- * @param <V> String 
- * 
  */
 public class ServerConfig {
 	private static Logger logger = LoggerFactory.getLogger(ServerConfig.class);
@@ -27,7 +24,7 @@ public class ServerConfig {
 			
 			logger.debug("HOST INFO : " + host);
 		} catch (Exception e) {
-			e.printStackTrace();
+			 logger.error(e.getMessage(), e);
 		}
 	}
 }

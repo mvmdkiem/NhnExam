@@ -17,9 +17,6 @@ import lombok.Getter;
  * 
  * @author Kim TaeHouyng
  *
- * @param <T> Object 
- * @param <V> String 
- * 
  */
 public class MappingConfig {
 	private static Logger logger = LoggerFactory.getLogger(MappingConfig.class);
@@ -35,7 +32,7 @@ public class MappingConfig {
 			
 			logger.debug("Maping INFO : " + mapping);
 		} catch (Exception e) {
-			e.printStackTrace();
+			 logger.error(e.getMessage(), e);
 		}
 	}
 	
@@ -68,7 +65,7 @@ public class MappingConfig {
 			servlet.service(req, res);
 			res.getWriter().flush();
 		}catch(Exception e) {
-			e.printStackTrace();
+			 logger.error(e.getMessage(), e);
 		}
 	}
 	
@@ -82,7 +79,7 @@ public class MappingConfig {
 			res.getWriter().flush();
 			res.setOutput(data);
 		}catch(Exception e) {
-			e.printStackTrace();
+			 logger.error(e.getMessage(), e);
 		}
 	}
 }
